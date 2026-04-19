@@ -1,0 +1,14 @@
+.footer-style {
+    display: flex;
+    height: 180px;
+    padding-left: 200px;
+    padding-right: 200px;
+    border-top: 1px solid #6c6e7b;
+    padding-top: 63px;
+    
+}
+
+.footer-text-style {
+    display: flex;
+    position: absolute;
+}
