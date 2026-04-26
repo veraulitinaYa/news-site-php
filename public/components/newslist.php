@@ -13,3 +13,4 @@ include __DIR__ . "/newstile4.php";
 ?>
 
  </div>
+ </div>

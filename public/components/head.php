@@ -4,12 +4,14 @@
   <title>Новости</title>
 <?php
 $styles = [
+  "/styles/variables.css",
   "/styles/globals.css",
   "/styles/footer-style.css",
   "/styles/header-style.css",
   "/styles/banner-style.css",
-  "/styles/newstile-style.css",
-  "/styles/newslist-style.css"
+    "/styles/newslist-style.css",
+  "/styles/newstile-style.css"
+
 ];
 ?>
   <?php if (!empty($styles)): ?>
