@@ -10,7 +10,9 @@ $styles = [
   "/styles/header-style.css",
   "/styles/banner-style.css",
     "/styles/newslist-style.css",
-  "/styles/newstile-style.css"
+  "/styles/newstile-style.css",
+  "/styles/newsinfo-style.css",
+  "/styles/style-general.css"
 
 ];
 ?>
