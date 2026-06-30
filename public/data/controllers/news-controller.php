@@ -23,13 +23,13 @@ class NewsController
 
         $banner = $this->model->getLatestNewsItem();
 
-        //include __DIR__ . '/../views/news-list.php';
+        include __DIR__ . '/../../components/newslist.php';
     }
 
     public function item(int $id): void
     {
         $news = $this->model->getNewsItemById($id);
 
-        //include __DIR__ . '/../views/news-item.php';
+        include __DIR__ . '/../../components/newstile.php';
     }
 }

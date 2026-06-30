@@ -1,7 +1,11 @@
-
 <main class="main-style">
-<?php
-//include __DIR__ . "/newsmainpage.php";
-include __DIR__ . "/newspageinfo1.php";
-?>
+    <?php
+    require_once __DIR__ . '/../data/controllers/news-controller.php';
+
+    $controller = new NewsController($pdo);
+
+    $page = $_GET['page'] ?? 1;
+
+    $controller->list((int)$page);
+    ?>
 </main>
