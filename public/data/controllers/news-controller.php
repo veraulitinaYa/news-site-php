@@ -13,7 +13,7 @@ class NewsController
         $this->model = new NewsModel($service);
     }
 
-    public function list(int $page = 1): void
+    public function list(int $page = 1): array
     {
         $perPage = 4;
 
@@ -23,13 +23,14 @@ class NewsController
 
         $banner = $this->model->getLatestNewsItem();
 
-        include __DIR__ . '/../../components/newslist.php';
+        return [
+            'news' => $news,
+            'banner' => $banner
+        ];
     }
 
-    public function item(int $id): void
+    public function item(int $id): array
     {
-        $news = $this->model->getNewsItemById($id);
-
-        include __DIR__ . '/../../components/newstile.php';
+          return $this->model->getNewsItemById($id);
     }
 }

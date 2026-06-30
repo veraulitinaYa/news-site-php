@@ -1,11 +1,8 @@
+
 <main class="main-style">
-    <?php
-    require_once __DIR__ . '/../data/controllers/news-controller.php';
 
-    $controller = new NewsController($pdo);
+    <?php include __DIR__ . '/newsbanner.php'; ?>
 
-    $page = $_GET['page'] ?? 1;
+    <?php include __DIR__ . '/newslist.php'; ?>
 
-    $controller->list((int)$page);
-    ?>
 </main>
