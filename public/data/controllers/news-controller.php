@@ -18,14 +18,16 @@ class NewsController
         $perPage = 4;
 
         $pages = $this->model->getNewsPaginated($perPage);
-
+       $totalPages = count($pages);
         $news = $pages[$page - 1] ?? [];
 
         $banner = $this->model->getLatestNewsItem();
 
         return [
             'news' => $news,
-            'banner' => $banner
+            'banner' => $banner,
+            'currentPage' => $page,
+            'totalPages' => $totalPages
         ];
     }
 

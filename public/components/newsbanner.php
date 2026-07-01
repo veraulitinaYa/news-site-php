@@ -1,6 +1,6 @@
 <div class="news-card news-card-banner-style">
       <img 
-    src="/images/<?= htmlspecialchars($banner['image']) ?>"
+    src="/images/<?= htmlspecialchars($banner['image'] ?? 'default.jpg') ?>"
     class="news-card-image news-card-banner-image-style" 
     alt="News image"
   />
