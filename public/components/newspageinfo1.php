@@ -1,5 +1,5 @@
 <?php $item = $data; ?>
-
+<?php include __DIR__ . '/breadcrumbs.php'; ?>
 <div class="news-section-style">
   <div class="news-card news-card-detailed-style">
 
