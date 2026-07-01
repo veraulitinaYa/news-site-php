@@ -14,6 +14,7 @@ $parts = explode('/', $uri);
 $route = $parts[1] ?? 'news';
 $sub   = $parts[2] ?? null;
 $sub2  = $parts[3] ?? null;
+$sub3  = $parts[4] ?? null;
 
 include __DIR__ . "/components/head.php";
 include __DIR__ . "/components/header.php";
@@ -22,7 +23,10 @@ switch ($route) {
 
     case 'news':
 
-        if ($sub === 'page' && $sub2 !== null) {
+        // ======================
+        // /news/page/номер страницы
+        // ======================
+        if ($sub === 'page' && $sub2 !== null && $sub3 === null) {
 
             $page = (int)$sub2;
 
@@ -37,6 +41,28 @@ switch ($route) {
             break;
         }
 
+        // ======================
+        // /news/page/номер страницы/номер новости 
+        // ======================
+        if ($sub === 'page' && $sub2 !== null && $sub3 !== null) {
+
+            $backPage = (int)$sub2;
+            $id = (int)$sub3;
+
+            $data = $controller->item($id);
+
+            if (!$data) {
+                echo "<h1>Новость не найдена</h1>";
+                break;
+            }
+
+            include __DIR__ . "/components/newspageinfo1.php";
+            break;
+        }
+
+        // ======================
+        // /news/номер стр 
+        // ======================
         if ($sub !== null && $sub !== 'page') {
 
             $id = (int)$sub;
@@ -47,12 +73,15 @@ switch ($route) {
                 break;
             }
 
-            $backPage = isset($_GET['page']) ? (int)$_GET['page'] : 1;
+            $backPage = 1;
 
             include __DIR__ . "/components/newspageinfo1.php";
             break;
         }
 
+        // ======================
+        // /news
+        // ======================
         $page = 1;
 
         $data = $controller->list($page);

@@ -13,7 +13,7 @@
     </span>
 
     <a class="news-card-details-button news-card-details-button-style"
-        href="/index.php/news/<?= $item['id'] ?>?page=<?= $currentPage ?>">
+        href="/index.php/news/page/<?= $currentPage ?>/<?= $item['id'] ?>">
         Подробнее
     </a>
 
