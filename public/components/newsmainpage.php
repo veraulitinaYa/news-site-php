@@ -4,4 +4,3 @@
 
     <?php include __DIR__ . '/newslist.php'; ?>
 </div>
-
