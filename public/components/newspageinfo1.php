@@ -1,23 +1,23 @@
 <?php $item = $data; ?>
 <?php include __DIR__ . '/breadcrumbs.php'; ?>
 <div class="news-section">
-  <div class="news-card news-card-detailed-style">
+  <div class="news-card-detailed">
 
     <div class="news-card-title-date-container">
-      <h1 class="news-card-title news-card-detailed-title-style">
+      <h1 class="news-card-detailed-title">
         <?= htmlspecialchars($item['title']) ?>
       </h1>
 
-      <span class="news-card-date news-card-detailed-date-style">
+      <span class="news-card-detailed-date">
         <?= date('Y-m-d', strtotime($item['date'])) ?>
       </span>
     </div>
 
-    <div class="news-card-detailed-content-style">
+    <div class="news-card-detailed-content">
 
       <div class="news-card-text-container">
 
-        <h2 class="news-card-announce news-card-detailed-announce-style">
+        <h2 class="news-card-detailed-announce">
           <?= $item['announce'] ?>
         </h2>
 
@@ -43,7 +43,7 @@
       </div>
 
       <div class="news-card-image-container">
-        <img class="news-card-image news-card-detailed-image-style"
+        <img class="news-card-detailed-image"
           src="/images/<?= htmlspecialchars($item['image'], ENT_QUOTES, 'UTF-8') ?>"
           alt="">
       </div>

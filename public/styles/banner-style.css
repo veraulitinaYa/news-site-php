@@ -1,4 +1,4 @@
-.news-card-banner-style {
+.news-card-banner {
   display: flex;
   width: 100%;
   height: 646px;
@@ -6,7 +6,7 @@
 
 }
 
-.news-card-banner-image-style {
+.news-card-banner-image {
   display: flex;
   width: 100%;
   height: 100%;
@@ -15,7 +15,7 @@
   
 }
 
-.news-card-banner-text-style {
+.news-card-banner-text {
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -25,17 +25,17 @@
 }
 
 
-.news-card-banner-title-style {
+.news-card-banner-title {
 color: var(--color-banner-text);
 margin: 0px;
 }
 
-.news-card-banner-announce-style {
+.news-card-banner-announce {
  color: var(--color-banner-text);
  font-weight: var(--font-primary-regular);
  font-size: 32px;
 }
 
-.news-card-banner-announce-style p {
+.news-card-banner-announce p {
 margin: 0px;
 }

@@ -1,14 +1,14 @@
-<div class="news-card news-card-banner-style">
+<div class="news-card-banner">
   <img
     src="/images/<?= htmlspecialchars($banner['image'] ?? 'default.jpg') ?>"
-    class="news-card-image news-card-banner-image-style"
+    class="news-card-banner-image"
     alt="News image" />
-  <div class="news-card-banner-text-style">
-    <h1 class="news-card-title news-card-banner-title-style">
+  <div class="news-card-banner-text">
+    <h1 class="news-card-banner-title">
       <?= htmlspecialchars($banner['title'] ?? '') ?>
     </h1>
     <span
-      class="news-card-announce news-card-banner-announce-style">
+      class="news-card-banner-announce">
       <?= $banner['announce'] ?></span>
   </div>
 </div>

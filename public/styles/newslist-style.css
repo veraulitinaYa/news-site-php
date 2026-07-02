@@ -1,4 +1,4 @@
-.news-list-style {
+.news-list {
     display: flex;
     flex-direction: column;
     padding-top: 55px;
@@ -7,7 +7,7 @@
 
 }
 
-.news-cards-container-style {
+.news-cards-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 40px;

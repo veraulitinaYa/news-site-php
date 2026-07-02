@@ -1,7 +1,7 @@
-<div class="news_list news-list-style">
-     <h1 class="news_list_title news-list-title-style">Новости</h1>
+<div class="news-list">
+     <h1 class="news-list-title">Новости</h1>
 
-     <div class="news-cards-container-style">
+     <div class="news-cards-container">
 
           <?php foreach ($news as $item): ?>
                <?php include __DIR__ . "/newstile.php"; ?>

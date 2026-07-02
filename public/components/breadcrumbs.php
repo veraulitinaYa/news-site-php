@@ -1,4 +1,4 @@
-<div class="breadcrumbs breadcrumbs-style">
+<div class="breadcrumbs">
 
     <a class="breadcrumbs-previous-page"
        href="/index.php/news/page/<?= $backPage ?? 1 ?>">
