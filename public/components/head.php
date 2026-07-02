@@ -13,6 +13,8 @@
     "/styles/newslist-style.css",
     "/styles/newstile-style.css",
     "/styles/newsinfo-style.css",
+    "/styles/paginator-style.css",
+    "/styles/breadcrumbs-style.css",
     "/styles/style-general.css"
 
   ];

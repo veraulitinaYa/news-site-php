@@ -1,10 +1,10 @@
-<div class="news-card news-card-item-style">
+<div class="news-tile-item">
 
-    <span class="news-card-date news-card-item-date-style">
-        <?= date('Y-m-d', strtotime($item['date'])) ?>
+    <span class="news-card-item-date">
+        <?= htmlspecialchars($item['date']) ?>
     </span>
 
-    <h3 class="news-card-title news-card-item-title-style">
+    <h3 class="news-card-item-title">
         <?= htmlspecialchars($item['title']) ?>
     </h3>
 
@@ -12,7 +12,7 @@
         <?= $item['announce'] ?>
     </span>
 
-    <a class="news-card-details-button news-card-details-button-style"
+    <a class="news-card-details-button button"
         href="/index.php/news/page/<?= $currentPage ?>/<?= $item['id'] ?>">
         Подробнее
     </a>

@@ -1,14 +1,14 @@
-.footer-style {
+.footer {
     display: flex;
     height: 180px;
-    padding-left: 200px;
-    padding-right: 200px;
+    margin-left: 200px;
+    margin-right: 200px;
     border-top: 1px solid #6c6e7b;
     padding-top: 63px;
     
 }
 
-.footer-text-style {
+.footer-text {
     display: flex;
     position: absolute;
 }

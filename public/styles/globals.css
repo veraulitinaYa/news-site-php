@@ -23,7 +23,7 @@ h2 {
   font-size: 32px;
 }
 
-button {
+.button {
   background: none;        
   border: 2px solid var(--color-accent-accent);   
   border-radius: 50px;       
@@ -44,7 +44,7 @@ padding-right:  41px;
   
 }
 
-button:hover {
+.button:hover {
   background-color: var(--color-accent);
   color: var(--color-banner-text);
   border-color: var(--color-accent-accent)
