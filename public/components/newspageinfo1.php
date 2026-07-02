@@ -9,7 +9,7 @@
       </h1>
 
       <span class="news-card-date news-card-detailed-date-style">
-        <?= htmlspecialchars($item['date']) ?>
+        <?= date('Y-m-d', strtotime($item['date'])) ?>
       </span>
     </div>
 
@@ -18,11 +18,11 @@
       <div class="news-card-text-container">
 
         <h2 class="news-card-announce news-card-detailed-announce-style">
-          <?= htmlspecialchars($item['announce']) ?>
+          <?= $item['announce'] ?>
         </h2>
 
         <span class="news-card-content">
-          <?= htmlspecialchars($item['content'] ?? '') ?>
+          <?= $item['content'] ?? '' ?>
         </span>
 
         <a href="/index.php/news/page/<?= $backPage ?? 1 ?>"

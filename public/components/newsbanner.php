@@ -9,6 +9,6 @@
     </h1>
     <span
       class="news-card-announce news-card-banner-announce-style">
-      <?= htmlspecialchars($banner['announce'] ?? '') ?></span>
+      <?= $banner['announce'] ?></span>
   </div>
 </div>
